@@ -10,8 +10,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.eigenaar.userinterface.MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingBottom="16dp"
+        android:src="@drawable/logo_zwemschooldruppel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
     <TextView
+        android:id="@+id/koptekst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Welkom bij Zwemschool Druppel!"
+        android:layout_below="@+id/logo"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="18dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:text="Aanmelden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:text="Contacten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="49dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/overons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Zwemles moet gezond, leerzaam maar vooral plezierig zijn voor uw kind. Om die elementen te garanderen heeft Zwemschool Druppel het Zwemlesplan ontwikkeld voor kinderen vanaf 4 jaar. Met het Zwemlesplan biedt Zwemschool Druppel uw kinderen een eigentijdse zwemles binnen de randvoorwaarden van het zwem-ABC, in een veilige omgeving.
+
+Het Zwemlesplan van Zwemschool Druppel is een helder en vastomlijnd lesprogramma met gediplomeerde en gemotiveerde instructeurs."
+        android:layout_below="@+id/koptekst"
+        android:layout_alignLeft="@+id/koptekst"
+        android:layout_alignStart="@+id/koptekst" />
 </RelativeLayout>
